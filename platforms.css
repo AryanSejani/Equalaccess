@@ -1,0 +1,197 @@
+/* Platform sections: illustrative panels and progressively enhanced logo motion. */
+#main .platform-section { padding: 96px 0; background: #f8fafc; color: #10213a; }
+.platform-layout { display: grid; grid-template-columns: minmax(0,.42fr) minmax(0,.58fr); align-items: center; gap: 58px; }
+.platform-copy,.platform-panel { min-width: 0; }
+#main p.platform-eyebrow { margin: 0 0 18px; color: #155ac1; font-size: .8125rem; font-weight: 600; line-height: 1.5; letter-spacing: .11em; }
+#main h2.platform-heading { margin: 0; color: #10213a; font-size: clamp(2.625rem,3.9vw,3.25rem); font-weight: 500; letter-spacing: -.045em; line-height: 1.12; text-wrap: balance; }
+.platform-prose { max-width: 540px; margin-top: 24px; }
+#main .platform-prose p { margin: 0; color: #5b6b7d; font-size: 1rem; line-height: 1.8; }
+#main .platform-prose p + p { margin-top: 16px; }
+.platform-panel { margin: 0; overflow: hidden; border: 1px solid #dce4ee; border-radius: 22px; background: #fff; box-shadow: 0 14px 38px -26px #10213a35; }
+.platform-panel-header { display: flex; align-items: center; gap: 11px; padding: 19px 24px; border-bottom: 1px solid #e3e8f0; background: #fcfdff; }
+.platform-panel-mark { display: grid; place-items: center; flex: 0 0 34px; height: 34px; border-radius: 9px; background: #eaf2ff; color: #155ac1; }
+.platform-panel-mark .icon { width: 19px; height: 19px; }
+.platform-panel-label { font-size: .75rem; font-weight: 600; letter-spacing: .065em; line-height: 1.5; }
+.platform-demo-label { margin-left: auto; padding: 3px 8px; border: 1px solid #e3e8f0; border-radius: 5px; color: #5b6b7d; font-size: .6875rem; }
+.platform-panel-body { padding: 25px; }
+.platform-context { margin: 0; }
+.platform-context > div + div { margin-top: 20px; }
+.platform-context dt,#main p.platform-field-label { margin: 0 0 10px; color: #5b6b7d; font-size: .8125rem; font-weight: 500; line-height: 1.5; }
+.platform-context dd { margin: 0; }
+.platform-url { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border: 1px solid #e3e8f0; border-radius: 9px; background: #f8fafc; font-size: .9375rem; line-height: 1.5; }
+.platform-url > span:not(.platform-example) { overflow-wrap: anywhere; min-width: 0; }
+.platform-url .icon { width: 17px; height: 17px; color: #64748b; }
+.platform-example { margin-left: auto; font-size: .6875rem; color: #64748b; }
+.platform-chips { display: flex; flex-wrap: wrap; gap: 7px; margin: 0; padding: 0; list-style: none; }
+.platform-chips li { padding: 5px 10px; border: 1px solid #e3e8f0; border-radius: 6px; background: #fff; color: #526177; font-size: .75rem; line-height: 1.5; }
+.platform-detail { display: block; margin-top: 9px; color: #64748b; font-size: .75rem; }
+.platform-methods { margin-top: 22px; padding-top: 20px; border-top: 1px solid #e3e8f0; }
+.platform-methods ul { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 13px 18px; list-style: none; margin: 0; padding: 0; }
+.platform-methods li { display: flex; align-items: flex-start; gap: 9px; color: #344760; font-size: .8125rem; line-height: 1.55; }
+.platform-methods .icon { width: 16px; height: 16px; margin-top: 2px; color: #155ac1; }
+#main p.platform-result { display: flex; align-items: center; gap: 10px; margin: 23px 0 0; padding: 13px 15px; border: 1px solid #d5eadc; border-radius: 9px; background: #eef9f2; color: #244d3b; font-size: .8125rem; font-weight: 500; line-height: 1.6; }
+.platform-result .icon { width: 18px; height: 18px; }
+#main .platform-panel figcaption { margin: 0; padding: 0 25px 20px; color: #64748b; font-size: .75rem; line-height: 1.6; }
+.platform-panel--audit .platform-methods ul { grid-template-columns: minmax(0,1fr); gap: 10px; }
+.platform-panel--audit .platform-methods { border-left: 1px solid #dce7f5; border-top: 0; margin-left: 8px; padding: 0 0 0 19px; }
+.platform-paths { margin-top: 23px; }
+.platform-paths ul { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 19px 20px; }
+.platform-paths li { display: flex; align-items: flex-start; gap: 10px; }
+.platform-path-icon { color: #155ac1; }
+.platform-path-icon .icon { width: 18px; height: 18px; margin-top: 2px; }
+.platform-paths b { display: block; font-size: .8125rem; font-weight: 500; line-height: 1.5; }
+.platform-paths small { display: block; margin-top: 3px; color: #64748b; font-size: .75rem; line-height: 1.6; }
+#main p.platform-technical-note { max-width: 1020px; margin: 30px 0 0; padding-left: 18px; border-left: 2px solid #bcd3f4; color: #5b6b7d; font-size: .9375rem; line-height: 1.8; }
+
+/* Static and reduced-motion views show all eight examples. Motion is opt-in via JS. */
+.platform-marquee { margin-top: 45px; padding-top: 15px; border-top: 1px solid #dfe6ef; }
+.platform-marquee-heading { display: flex; justify-content: space-between; align-items: center; gap: 18px; min-height: 44px; }
+#main p.platform-label { margin: 0; color: #64748b; font-size: .6875rem; font-weight: 600; line-height: 1.5; letter-spacing: .1em; }
+.platform-motion-toggle { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 104px; padding: 9px 12px; border: 1px solid transparent; border-radius: 8px; background: transparent; color: #526177; font-size: .75rem; line-height: 1.5; text-decoration: underline; text-underline-offset: 3px; }
+.platform-motion-toggle[hidden] { display: none !important; }
+.platform-motion-toggle:hover { border-color: #cbd8e8; background: #fff; color: #155ac1; }
+.platform-logo-viewport { overflow: hidden; }
+.platform-logo-list { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 40px; margin: 0; padding: 12px 0; list-style: none; }
+.platform-logo-list li { display: flex; flex: 0 0 auto; align-items: center; gap: 8px; min-height: 36px; color: #4b5d73; font-size: 1.125rem; font-weight: 500; line-height: 1.5; letter-spacing: -.02em; }
+.platform-logo-list img { width: 27px; height: 27px; object-fit: contain; opacity: .69; filter: grayscale(1); }
+.platform-logo-list .platform-logo-shopify { width: 102px; height: 30px; }
+.platform-logo-list .platform-logo-woo { width: 105px; height: 30px; }
+.platform-logo-list .platform-logo-custom { font-size: .9375rem; letter-spacing: -.01em; }
+.platform-logo-custom .icon { width: 21px; height: 21px; }
+.platform-logo-list--duplicate { display: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .has-motion .platform-logo-viewport { mask-image: linear-gradient(90deg,transparent,#000 22px,#000 calc(100% - 22px),transparent); }
+  .has-motion .platform-logo-track { display: flex; width: max-content; animation: platform-logo-loop 60s linear infinite; }
+  .has-motion .platform-logo-list { flex: 0 0 auto; flex-wrap: nowrap; justify-content: flex-start; gap: 52px; padding: 12px 52px 12px 0; }
+  .has-motion .platform-logo-list--duplicate { display: flex; }
+  .has-motion[data-paused="true"] .platform-logo-track { animation-play-state: paused; }
+}
+@keyframes platform-logo-loop { to { transform: translateX(-50%); } }
+
+.platform-support-strip { display: flex; align-items: center; justify-content: space-between; gap: 32px; margin-top: 24px; padding: 23px 28px; border: 1px solid #dce7e2; border-radius: 18px; background: #f1f8f4; }
+#main p.platform-support { display: flex; flex-wrap: wrap; gap: 3px 8px; margin: 0; color: #526177; font-size: 1rem; line-height: 1.7; }
+.platform-support strong { color: #10213a; font-weight: 600; }
+.platform-call { flex: 0 0 auto; text-align: center; }
+.platform-call-link { display: flex; justify-content: center; align-items: center; gap: 19px; min-height: 47px; padding: 11px 18px; border: 1px solid #b8cde9; border-radius: 8px; background: #fff; color: #155ac1; font-size: .9375rem; font-weight: 600; line-height: 1.5; transition: background-color .15s,border-color .15s; }
+.platform-call-link .icon { width: 18px; height: 18px; }
+.platform-call-link:hover { border-color: #155ac1; background: #edf4ff; }
+.platform-call small { display: block; margin-top: 7px; color: #526177; font-size: .75rem; line-height: 1.5; }
+.platform-call-link:focus-visible,.platform-motion-toggle:focus-visible { outline: 3px solid #155ac1; outline-offset: 4px; }
+
+/* Quieter treatments for directory, company, and ongoing-support pages. */
+#main .platform-section--small { padding: 62px 0; }
+#main .platform-section--small h2.platform-heading { font-size: clamp(2rem,2.85vw,2.5rem); line-height: 1.18; letter-spacing: -.035em; }
+.platform-section--small .platform-layout { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 60px; }
+.platform-section--small .platform-prose { margin-top: 20px; }
+.platform-section--small .platform-marquee { margin-top: 32px; }
+.platform-section--small .platform-panel { box-shadow: none; border-radius: 18px; }
+.platform-section--small .platform-panel-header { padding-block: 15px; }
+.platform-section--small .platform-panel-body { padding-block: 20px; }
+.platform-capabilities { display: grid; gap: 13px; }
+.platform-capabilities li { display: flex; align-items: center; gap: 14px; padding: 0 0 13px; border-bottom: 1px solid #e9edf4; }
+.platform-capabilities li:last-child { padding-bottom: 0; border: 0; }
+.platform-capability-icon { display: grid; place-items: center; width: 38px; height: 38px; flex: 0 0 38px; border-radius: 9px; background: #eef3f8; color: #155ac1; }
+.platform-capability-icon .icon { width: 19px; height: 19px; }
+.platform-capabilities b { display: block; font-size: 1rem; font-weight: 500; }
+.platform-capabilities small { display: block; color: #64748b; font-size: .75rem; line-height: 1.6; }
+.platform-existing { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.platform-existing li { display: flex; align-items: center; gap: 10px; padding: 17px 14px; border: 1px solid #e3e8f0; border-radius: 9px; color: #344760; font-size: .875rem; }
+.platform-existing .icon { width: 19px; height: 19px; color: #64748b; }
+.platform-partners { display: grid; grid-template-columns: minmax(0,1fr) 18px minmax(0,.8fr); align-items: center; gap: 10px; margin-top: 20px; padding: 20px 0 0; border-top: 1px solid #e3e8f0; font-size: .8125rem; line-height: 1.5; }
+.platform-partners > span { display: flex; align-items: center; gap: 8px; }
+.platform-partners .icon { width: 19px; height: 19px; }
+.platform-partners .platform-partner-plus { justify-content: center; color: #64748b; }
+.platform-equalaccess { justify-content: flex-end; color: #155ac1; font-size: 1rem; font-weight: 500; letter-spacing: -.02em; }
+.platform-section--monitoring .platform-layout { grid-template-columns: minmax(0,1.4fr) minmax(0,.6fr); gap: 60px; }
+#main .platform-section--monitoring h2.platform-heading { max-width: 660px; font-size: clamp(1.875rem,2.65vw,2.25rem); }
+.platform-section--monitoring .platform-prose { max-width: 720px; }
+.platform-monitoring-labels { display: grid; gap: 14px; padding-left: 28px; border-left: 1px solid #dce4ee; }
+.platform-monitoring-labels li { display: flex; align-items: center; gap: 11px; color: #526177; font-size: .875rem; line-height: 1.6; }
+.platform-monitoring-labels .icon { width: 19px; height: 19px; color: #155ac1; }
+
+@media (max-width: 1100px) {
+  .platform-layout,.platform-section--small .platform-layout { gap: 35px; }
+  #main h2.platform-heading { font-size: 2.75rem; }
+  .platform-panel-header { padding-inline: 20px; gap: 9px; }
+  .platform-panel-body { padding: 20px; }
+  #main .platform-panel figcaption { padding-inline: 20px; }
+  .platform-demo-label { font-size: .625rem; }
+  .platform-methods ul,.platform-paths ul { gap: 13px; }
+  .platform-partners { grid-template-columns: 1fr; gap: 11px; }
+  .platform-partners .platform-partner-plus { display: none; }
+  .platform-partners .platform-equalaccess { justify-content: flex-start; }
+}
+@media (max-width: 900px) {
+  #main .platform-section { padding: 64px 0; }
+  .platform-layout,.platform-section--small .platform-layout,.platform-section--monitoring .platform-layout { grid-template-columns: minmax(0,1fr); gap: 32px; }
+  .platform-copy { max-width: 720px; }
+  #main h2.platform-heading { max-width: 690px; font-size: clamp(2.375rem,5.3vw,3.25rem); }
+  .platform-prose { max-width: 680px; }
+  .platform-panel { width: 100%; max-width: 680px; }
+  .platform-panel-body { padding: 25px; }
+  .platform-panel-header { padding-inline: 25px; }
+  #main .platform-panel figcaption { padding-inline: 25px; }
+  .platform-partners { grid-template-columns: minmax(0,1fr) 18px minmax(0,.8fr); }
+  .platform-partners .platform-partner-plus { display: flex; }
+  .platform-partners .platform-equalaccess { justify-content: flex-end; }
+  .platform-support-strip { gap: 25px; padding: 23px; }
+  .platform-support { flex-direction: column; }
+  #main .platform-section--small { padding: 50px 0; }
+  .platform-monitoring-labels { border: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 16px 25px; }
+}
+@media (max-width: 600px) {
+  #main .platform-section .container { width: calc(100% - 40px); }
+  #main .platform-section { padding: 52px 0; }
+  #main h2.platform-heading { font-size: 2.375rem; }
+  #main .platform-section--small h2.platform-heading { font-size: 2rem; }
+  #main p.platform-eyebrow { font-size: .75rem; margin-bottom: 14px; }
+  .platform-prose { margin-top: 20px; }
+  .platform-panel { border-radius: 16px; }
+  .platform-panel-header { flex-wrap: wrap; padding: 15px 17px; }
+  .platform-panel-label { font-size: .6875rem; }
+  .platform-demo-label { margin-left: 0; }
+  .platform-panel-body { padding: 18px; }
+  #main .platform-panel figcaption { padding: 0 18px 17px; }
+  .platform-url { gap: 8px; padding: 11px; font-size: .875rem; }
+  .platform-example { display: none; }
+  .platform-methods ul,.platform-paths ul { grid-template-columns: minmax(0,1fr); gap: 12px; }
+  .platform-methods li { font-size: .875rem; }
+  .platform-paths b { font-size: .875rem; }
+  .platform-paths small { font-size: .8125rem; }
+  .platform-chips { gap: 6px; }
+  .platform-chips li { padding: 4px 8px; }
+  #main p.platform-result { align-items: flex-start; padding: 12px; }
+  .platform-result .icon { margin-top: 2px; }
+  .platform-existing { grid-template-columns: minmax(0,1fr); gap: 9px; }
+  .platform-existing li { padding: 12px; }
+  .platform-partners { grid-template-columns: minmax(0,1fr); gap: 12px; }
+  .platform-partners .platform-partner-plus { display: none; }
+  .platform-partners .platform-equalaccess { justify-content: flex-start; }
+  .platform-capabilities small { font-size: .8125rem; }
+  .platform-marquee,.platform-section--small .platform-marquee { margin-top: 30px; padding-top: 10px; }
+  .platform-marquee-heading { gap: 10px; }
+  #main p.platform-label { max-width: 180px; font-size: .625rem; }
+  .platform-motion-toggle { padding-inline: 6px; min-width: 97px; }
+  .platform-logo-list { gap: 10px 24px; }
+  .platform-logo-list li { font-size: 1rem; }
+  .platform-support-strip { flex-direction: column; align-items: stretch; gap: 20px; padding: 23px 20px; border-radius: 16px; }
+  #main p.platform-support { font-size: 1rem; }
+  .platform-call-link { width: 100%; min-height: 48px; }
+  .platform-call small { font-size: .75rem; }
+  .platform-monitoring-labels { display: grid; gap: 13px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .platform-call-link { transition: none; }
+  .platform-motion-toggle { display: none !important; }
+}
+@media print {
+  .has-motion .platform-logo-track { display: block; width: auto; animation: none; transform: none; }
+  .has-motion .platform-logo-list { flex-wrap: wrap; padding-right: 0; }
+  .has-motion .platform-logo-list--duplicate,.platform-motion-toggle { display: none !important; }
+  .has-motion .platform-logo-viewport { mask-image: none; }
+}
+@media (forced-colors: active) {
+  .platform-panel,.platform-support-strip,.platform-call-link,.platform-motion-toggle,.platform-chips li,.platform-url,.platform-existing li { border-color: CanvasText; }
+  .has-motion .platform-logo-viewport { mask-image: none; }
+  .platform-logo-list img { opacity: 1; }
+}

@@ -1,0 +1,50 @@
+/* Shared brand, announcement and header. Footer styling is in footer.css. */
+:root { --brand-blue: #155ac1; --brand-navy: #10213a; --brand-coral: #ff6b4a;
+  --brand-sky: #9ec5ff; --brand-lavender: #c3b5ff; --brand-mint: #beeccf;
+  --brand-yellow: #ffe9a8; --brand-peach: #ffcfaf; --brand-lavender-white: #f8f5ff;
+  --brand-gray-blue: #eef3f8; --brand-sand: #fff1e8; --brand-offwhite: #f8fafc;
+  --brand-white: #fff; --brand-body: #5b6b7d; --brand-muted: #64748b; --brand-border: #e3e8f0; }
+.wordmark .wordmark-gateway { width: 1.2em; height: 1.2em; flex: none; align-self: center; margin-right: .3em; fill: currentColor; stroke: none; }
+:is(a[href],button,summary,select,[role="button"],[role="link"],[role="tab"],.clickable,input[type="button"],input[type="submit"],input[type="reset"],input[type="checkbox"],input[type="radio"]):not(:disabled):not([aria-disabled="true"]) { cursor: pointer; }
+.site-announcement { position: static; background: var(--brand-navy); color: #fff; }
+.site-announcement .container { display: flex; align-items: center; justify-content: center; gap: 6px 24px; min-height: 44px; }
+.site-announcement p { font-size: .875rem; line-height: 1.5; }
+.site-announcement a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: var(--brand-peach); font-size: .875rem; font-weight: 600; line-height: 1.5; white-space: nowrap; }
+.site-announcement a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.site-announcement a:focus-visible { outline-color: var(--brand-sky); }
+.site-announcement .icon { width: 17px; height: 17px; }
+.announcement-mobile { display: none; }
+.site-header--mega { --ink: var(--brand-navy); --blue: var(--brand-blue); --body: var(--brand-body); --line: var(--brand-border); }
+.site-header--mega .wordmark > span:not(.wordmark-period) { margin-left: 0; }
+.site-header--mega .nav-menu > summary, .site-header--mega .nav-contact { color: var(--brand-navy); white-space: nowrap; }
+.site-header--mega .nav-contact[aria-current="page"] { color: var(--brand-blue); background: var(--brand-gray-blue); }
+.site-header--mega .nav-menu > summary:hover, .site-header--mega .nav-contact:hover, .site-header--mega .nav-menu[open] > summary { background: var(--brand-gray-blue); color: var(--brand-blue); }
+.site-header--mega .mega-menu--resources .mega-feature { background: var(--brand-lavender-white); border-color: var(--brand-border); }
+.site-header--mega .mega-menu--resources .mega-feature h2 { color: var(--brand-navy); }
+.site-header--mega .mega-menu--resources .mega-description,
+.site-header--mega .mega-menu--resources .mega-feature-description { color: var(--brand-body); }
+.site-header--mega .mega-menu--resources .mega-icon { color: var(--brand-muted); }
+.site-header--mega .mega-menu--resources a[aria-current="page"] { background: var(--brand-gray-blue); }
+.site-header--mega .mega-menu--resources a[aria-current="page"] .mega-icon { color: var(--brand-blue); }
+.site-header--mega .mega-layout { max-height: calc(100dvh - 166px); }
+@media (max-width: 1200px) {
+.site-header--mega .header-action-shell { display: none; }
+.site-header--mega .mobile-panel { max-height: calc(100dvh - 163px); }
+.site-header--mega .mobile-contact { color: var(--brand-navy); border-bottom: 1px solid var(--brand-border); }
+.site-header--mega .mobile-contact:hover, .site-header--mega .mobile-contact[aria-current="page"] { color: var(--brand-blue); }
+.site-header--mega .mobile-panel > .button { margin-top: 18px; }
+}
+@media (max-width: 760px) {
+.site-announcement .container { flex-wrap: wrap; gap: 0 10px; padding-block: 5px; text-align: center; }
+.site-announcement p, .site-announcement a { font-size: .875rem; }
+.announcement-desktop { display: none; }
+.announcement-mobile { display: inline; }
+}
+@media (max-width: 480px) {
+.site-announcement .container { flex-direction: column; padding: 9px 0 2px; }
+.site-header--mega .mobile-panel { max-height: calc(100dvh - 184px); }
+}
+@media (forced-colors: active) {
+.site-announcement { border-top: 1px solid CanvasText; }
+.site-announcement a { color: LinkText; }
+}
