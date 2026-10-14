@@ -36,12 +36,14 @@
 }
 @media (max-width: 760px) {
 .site-announcement .container { flex-wrap: wrap; gap: 0 10px; padding-block: 5px; text-align: center; }
-.site-announcement p, .site-announcement a { font-size: .875rem; }
+.site-announcement p, .site-announcement a { font-size: .8125rem; }
+.site-announcement p { line-height: 1.45; text-wrap: balance; }
+.site-announcement a { gap: 7px; }
 .announcement-desktop { display: none; }
 .announcement-mobile { display: inline; }
 }
 @media (max-width: 480px) {
-.site-announcement .container { flex-direction: column; padding: 9px 0 2px; }
+.site-announcement .container { flex-direction: column; padding: 6px 0 0; }
 .site-header--mega .mobile-panel { max-height: calc(100dvh - 184px); }
 }
 @media (forced-colors: active) {

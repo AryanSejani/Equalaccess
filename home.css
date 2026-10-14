@@ -391,8 +391,9 @@
 @media (max-width: 700px) {
   .home-section { padding: 66px 0; }
   .homepage .access-hero { padding: 53px 0 32px; }
-  .homepage .access-hero h1 { font-size: clamp(2.45rem,6.2vw,3.1rem); }
+  .homepage .access-hero h1 { font-size: clamp(1.875rem, calc(1.25rem + 3vw), 2.5rem); line-height: 1.18; }
   .homepage .access-hero h1 br { display: none; }
+  .homepage .access-hero h1 em { display: block; text-wrap: balance; }
   .homepage .access-hero-description { font-size: 1rem; line-height: 1.8; margin-top: 23px; }
   .access-hero-context { font-size: .9375rem; }
   .homepage .access-hero .access-hero-kicker { font-size: .75rem; letter-spacing: .1em; margin-bottom: 22px; }
@@ -460,7 +461,6 @@
   .home-final-priority { margin-top: 18px; }
 }
 @media (max-width: 400px) {
-  .homepage .access-hero h1 { font-size: 2.4rem; }
   .home-trust { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px 9px; }
   .home-trust li { font-size: .75rem; gap: 6px; }
   .home-priority-link { font-size: .8125rem; }
