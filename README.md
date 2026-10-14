@@ -6,10 +6,12 @@ The complete static website, with `index.html` at the repository root. All 20 pa
 
 In repository **Settings → Pages**, choose **Deploy from a branch**, select **main** and **/ (root)**, then save.
 
-Intended address: https://aryansejani.github.io/Equalaccess/
+Intended address: https://equalaccessweb.com/
+
+The custom domain is equalaccessweb.com. Keep the CNAME file when updating this export; it preserves the domain configured in GitHub Pages.
 
 Local page and asset links are relative, so they work at the repository URL and on a custom domain. The `.nojekyll` file serves the existing HTML directly. Canonical URLs, social metadata, structured data, and the sitemap use the address above. Update those URLs when moving to a custom domain.
 
 ## Update this export
 
-This is a snapshot of the EqualAccess. Sites project at https://equal-access-web.fowler-966.chatgpt.site/. It does not automatically synchronize later edits from that project. In the original source checkout, run `node scripts/build.mjs`, then `node scripts/export-github-pages.mjs <empty-output-directory> https://aryansejani.github.io/Equalaccess/` and commit the exported files to this repository. Keep `index.html`, the page folders, CSS, JavaScript, and assets at the same root level.
+This is an export of the shared EqualAccess. source project for https://equalaccessweb.com/. It does not automatically synchronize later edits from that project. In the original source checkout, run `node scripts/build.mjs`, then `node scripts/export-github-pages.mjs <empty-output-directory> https://equalaccessweb.com/` and commit the exported files to this repository. Keep `index.html`, the page folders, CSS, JavaScript, and assets at the same root level.
